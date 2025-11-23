@@ -14,12 +14,12 @@ export default function Home() {
             العربي في جميع مراحل كتابة الكود — من تحويل الأفكار إلى كود جاهز،
             وتنظيم وتحسين الأداء، إلى مراجعة الأخطاء وتصحيحها. يقدّم الموقع
             تجربة سهلة، سريعة، وذكية تساعد المطوّر على رفع جودة برمجته وتسريع
-            إنتاجه في المشاريع. 213
+            إنتاجه في المشاريع.
           </p>
 
           <div className="mt-40 mr-20 flex justify-right gap-x-6">
             <a
-              href="/features"
+              href="/knowMore"
               className="rounded-md bg-[#556244] px-12 py-4 text-2xl font-semibold text-white shadow-sm hover:bg-[#556244] font-Alexandria"
             >
               اعرف اكتر

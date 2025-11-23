@@ -7,7 +7,7 @@
 
 :root {
   --background: #ffcc00c5;
-  --foreground:  white;
+  --foreground:  black;
 }
 
 @theme inline {
@@ -22,7 +22,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #8B2F2F;
-    --foreground: #F1C40F;
+    --foreground: black;
   }
 }
 
@@ -30,31 +30,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.custom-animated-text {
-  background: linear-gradient(-45deg, #C29A3A, #BFD3DD, #1B6F5D, #e63682);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradient 5s linear infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  25% {
-    background-position: 25% 25%;
-  }
-  50% {
-    background-position: 50% 50%;
-  }
-  75% {
-    background-position: 75% 75%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
