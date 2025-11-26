@@ -101,7 +101,7 @@ export default function BackgroundOrnaments() {
         height="100%"
         viewBox={`0 0 600 ${windowSize.h}`}
         preserveAspectRatio="xMidYMid slice"
-        className="absolute top-0 left-0 w-full h-full z-0"
+        className="absolute top-0 left-0 w-full h-full -ml-10 z-0"
       >
         <defs>
           {ornaments.map((_, i) => (

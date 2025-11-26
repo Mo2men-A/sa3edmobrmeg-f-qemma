@@ -19,7 +19,7 @@ export default function Home() {
           <div className="mt-[clamp(16px,4vw,40px)] flex justify-start lg: gap-x-[clamp(8px,2vw,24px)]">
             <a
               href="/knowMore"
-              className="rounded-md bg-[#556244] px-[clamp(12px,3vw,48px)] py-[clamp(8px,2vw,20px)] text-[clamp(16px,2.5vw,24px)] font-semibold text-white shadow-sm hover:bg-[#556244] font-Alexandria mt-20 "
+              className="rounded-md bg-[#556244] px-[clamp(12px,3vw,48px)] py-[clamp(8px,2vw,20px)] text-[clamp(16px,2.5vw,24px)] font-semibold text-white shadow-sm font-Alexandria mt-20 "
             >
               اعرف اكتر
             </a>
