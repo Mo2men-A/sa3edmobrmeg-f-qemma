@@ -11,7 +11,7 @@ export async function POST(req: Request) {
       );
     }
 
-    const MODEL = "models/gemini-flash-latest";
+    const MODEL = "models/gemma-3-27b-it";
 
     const endpoint =
       `https://generativelanguage.googleapis.com/v1beta/${MODEL}:generateContent?key=` +
@@ -29,10 +29,10 @@ export async function POST(req: Request) {
                   `You are a strict code fixer.\n` +
                   `Fix the following code.\n` +
                   `❗ RETURN THE FIXED CODE.\n` +
-                  `❗ EXPLANATION .\n` +
+                  `❗ EXPLANATION IN ARABIC.\n` +
                   `❗EXPLAIN THE BUG ONLY. \n`+
                   `❗ NO COMMENTS.\n` +
-                  `❗ WRITE THE COMMENTS THAT WRITTEN IN THE CODE.\n`+
+                  `❗WRITE EXPLAINTION AS HEADER TO EXPLANATION UNDER CODE.\n` +
                   `❗ TEXT OUTSIDE THE CODE.\n` +
                   `❗ NO PUNCTUATION MARKS.\n` +
                   codeToDebug,
