@@ -65,10 +65,10 @@ export default function DebuggerPage() {
 
         {/* Input Code */}
         <div>
-          <h2 className="text-xl font-semibold mb-2">Input Code</h2>
+          <h2 className="text-xl font-semibold mb-2 font-Alexandria text-right">ادخل الكود</h2>
           <textarea
             rows={15}
-            className="w-full h-120 p-3 bg-gray-900 text-green-400 font-mono rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-[#556244]"
+            className="w-full h-120 p-3 bg-gray-900 text-green-400 font-mono rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-[#556244] "
             value={code}
             onChange={(e) => setCode(e.target.value)}
             placeholder="Paste your code here..."
@@ -77,7 +77,7 @@ export default function DebuggerPage() {
 
         {/* Fixed Code */}
         <div>
-          <h2 className="text-xl font-semibold mb-2">Fixed Code</h2>
+          <h2 className="text-xl font-semibold mb-2 font-Alexandria text-right">الكود المصحح</h2>
 
           <div className="relative">
             <button
@@ -95,7 +95,7 @@ export default function DebuggerPage() {
 
         {/* Explanation */}
         <div>
-          <h2 className="text-xl font-semibold mb-2">Explanation (Arabic)</h2>
+          <h2 className="text-xl font-semibold mb-2 font-Alexandria text-right">الشرح</h2>
 
           <div className="relative">
             <button
@@ -115,9 +115,9 @@ export default function DebuggerPage() {
       <button
         onClick={handleDebug}
         disabled={isLoading}
-        className="mt-20 bg-[#556244] text-white py-5 px-6 rounded-md font-semibold disabled:bg-gray-500 disabled:cursor-not-allowed transition-colors justify-center flex mx-auto"
+        className="mt-20 bg-[#556244] text-white py-5 px-6 rounded-md font-semibold disabled:bg-gray-500 disabled:cursor-not-allowed transition-colors justify-center flex mx-auto font-Cairo"
       >
-        {isLoading ? "Debugging..." : "Debug Code"}
+        {isLoading ? "يصحح" : "ابدأ التصحيح"}
       </button>
     </div>
   );

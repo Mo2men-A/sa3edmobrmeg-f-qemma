@@ -19,7 +19,7 @@ export default function ConvertToCode() {
         return;
       }
 
-      const res = await fetch("http://localhost:5000", {
+      const res = await fetch("/api/convertToCode", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
