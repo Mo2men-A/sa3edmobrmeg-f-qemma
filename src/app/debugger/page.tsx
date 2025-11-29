@@ -63,19 +63,19 @@ export default function DebuggerPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-        {/* Input Code */}
+        
         <div>
           <h2 className="text-xl font-semibold mb-2 font-Alexandria text-right">ادخل الكود</h2>
           <textarea
             rows={15}
-            className="w-full h-120 p-3 bg-gray-900 text-green-400 font-mono rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-[#556244] "
+            className="w-full h-120 p-3 bg-gray-900 text-green-400 font-mono rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-[#f7c948] "
             value={code}
             onChange={(e) => setCode(e.target.value)}
             placeholder="Paste your code here..."
           />
         </div>
 
-        {/* Fixed Code */}
+      
         <div>
           <h2 className="text-xl font-semibold mb-2 font-Alexandria text-right">الكود المصحح</h2>
 
@@ -93,7 +93,7 @@ export default function DebuggerPage() {
           </div>
         </div>
 
-        {/* Explanation */}
+      
         <div>
           <h2 className="text-xl font-semibold mb-2 font-Alexandria text-right">الشرح</h2>
 

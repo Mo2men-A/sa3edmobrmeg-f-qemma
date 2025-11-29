@@ -61,15 +61,10 @@ export default function ConvertToCode() {
     <div className="flex flex-col items-center justify-start py-12 px-4 sm:px-8">
       <div className="w-full max-w-6xl">
 
-        <h1 className="text-4xl font-bold mb-4 font-Alexandria text-right">
+        <h1 className="text-4xl font-bold mb-4 font-Alexandria text-center text-white">
           صفحة تحويل من كتابة إلى كود
         </h1>
-
-        <p className="text-lg text-white mb-8 font-Cairo text-right">
-          اكتب وصفًا ثم اضغط <strong>Generate</strong> للحصول على كود.
-        </p>
-
-       
+   
         <div className="flex justify-end mb-4">
           <select
             value={language}
@@ -92,8 +87,8 @@ export default function ConvertToCode() {
             <textarea
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="مثال: مصنع زر يغير اللون عند الضغط..."
-              className="min-h-[360px] resize-none p-4 rounded-lg shadow-sm border border-slate-200 bg-white text-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-300"
+            
+              className=" min-h-[360px] resize-none p-4 rounded-lg shadow-sm border border-slate-200 bg-slate-900 font-mono text-green-400 focus:outline-none focus:ring-2 focus:ring-amber-300"
             />
 
             <div className="flex items-center justify-between mt-3">
@@ -130,7 +125,7 @@ export default function ConvertToCode() {
               className="min-h-[360px] p-4 rounded-lg shadow-sm border border-slate-200 bg-slate-900 text-slate-100 overflow-auto whitespace-pre-wrap"
               aria-live="polite"
             >
-              {output || "// النتيجة ستظهر هنا بعد الضغط على Generate"}
+              {output}
             </pre>
 
             <div className="flex items-center justify-between mt-3">
@@ -179,11 +174,7 @@ export default function ConvertToCode() {
           <button
             onClick={generate}
             disabled={loading}
-            className={`px-6 py-3 rounded-md text-white font-medium ${
-              loading
-                ? "bg-amber-300 cursor-wait"
-                : "bg-amber-500 hover:bg-amber-600"
-            }`}
+            className={`px-6 py-3 rounded-md text-white font-medium bg-[#556244]`}
           >
             {loading ? "Generating..." : "Generate"}
           </button>
