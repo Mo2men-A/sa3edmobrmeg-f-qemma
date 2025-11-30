@@ -30,7 +30,7 @@ export default function DebuggerPage() {
 
       if (response.ok && data.success) {
         const aiResult: string = data.result;
-        const explanationIndex = aiResult.toLowerCase().indexOf("الخطأ");
+        const explanationIndex = aiResult.toLowerCase().indexOf("الشرح");
 
         if (explanationIndex !== -1) {
           setFixedCode(aiResult.slice(0, explanationIndex).trim());

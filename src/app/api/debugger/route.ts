@@ -35,6 +35,10 @@ export async function POST(req: Request) {
                   `❗WRITE EXPLAINTION AS HEADER TO EXPLANATION UNDER CODE.\n` +
                   `❗ TEXT OUTSIDE THE CODE.\n` +
                   `❗ NO PUNCTUATION MARKS.\n` +
+                   `❗ Write الشرح as HEADER TO EXPELANATION AND \n`+
+                   `❗ NO Emoje.\n` +
+                   `❗ NO WRITE EXPLANTION AT THE END AFTER THE CODE.\n` +
+
                   codeToDebug,
               },
             ],
